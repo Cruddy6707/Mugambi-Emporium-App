@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/loginbackground"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/Login_logo"
+        android:layout_width="146dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/logo" />
+
+
+    <EditText
+        android:id="@+id/mEdtEmail"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter Email account "
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="17sp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/mEdtPassword"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter Password "
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:password="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="17sp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mEdtPassword">
+
+        <CheckBox
+            android:id="@+id/mCheckRememberMe"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="28dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="Remember me"
+            android:textSize="16dp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mBtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout1"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="89dp"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/mTxtAdminPanelLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/mBtnLogin"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/mTxtNotAdminPanelLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mBtnLogin"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="@id/mBtnLogin"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="I am not an Admin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

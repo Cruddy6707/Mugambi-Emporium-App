@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "112501299520",
+    "project_id": "mugambi-emporium-9cf5b",
+    "storage_bucket": "mugambi-emporium-9cf5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112501299520:android:9bb6c98d9eb003964f42a5",
+        "android_client_info": {
+          "package_name": "com.example.mugambiemporium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112501299520-5814rfja8rp1pdertkbhueo29unmhb34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-lJQwbdFhqHr4cQQ7IVOJw5rtk4Ga3T0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112501299520-5814rfja8rp1pdertkbhueo29unmhb34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
